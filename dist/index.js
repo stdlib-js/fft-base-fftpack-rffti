@@ -1,7 +1,7 @@
-"use strict";var _=function(r,a){return function(){return a||r((a={exports:{}}).exports,a),a.exports}};var j=_(function(H,h){
-var M=require('@stdlib/math-base-special-sincos/dist').assign,P=require('@stdlib/constants-float64-two-pi/dist'),S=require('@stdlib/math-base-special-floor/dist'),b=require('@stdlib/fft-base-fftpack-decompose/dist'),y=[4,2,3,5];function z(r,a,v,u,f,i,I){var t,O,R,o,n,q,s,e,c,T,l,m,x,g,p,A;if(n=b(r,4,y,1,0,f,i,I),n-1!==0)for(R=P/r,m=2,e=1,o=I+2*i,T=2*v,p=0;p<n-1;p++){for(t=f[o],s=t*e,x=S(r/s),c=0,A=1;A<t;A++){for(c+=e,O=c*R,q=1,l=u+m*v,g=2;g<x;g+=2)M(q*O,a,-v,l),q+=1,l+=T;m+=x}e=s,o+=i}}h.exports=z
-});var L=_(function(J,C){
-var B=j();function D(r,a,v,u){var f,i;if(r!==1)return f=u+r*v,i=f+r*v,B(r,a,v,f,a,v,i),a}C.exports=D
+"use strict";var h=function(a,r){return function(){return r||a((r={exports:{}}).exports,r),r.exports}};var p=h(function(H,j){
+var M=require('@stdlib/math-base-special-sincos/dist').assign,P=require('@stdlib/constants-float64-two-pi/dist'),S=require('@stdlib/math-base-special-floor/dist'),b=require('@stdlib/fft-base-fftpack-decompose/dist'),y=[4,2,3,5];function z(a,r,v,u,f,i,O){var t,R,T,n,o,q,l,e,s,_,c,m,x,g,A,I;if(o=b(a,4,y,1,0,f,i,O),o-1!==0)for(T=P/a,m=2,e=1,n=O+2*i,_=2*v,A=0;A<o-1;A++){for(t=f[n],l=t*e,x=S(a/l),s=0,I=1;I<t;I++){for(s+=e,R=s*T,q=1,c=u+m*v,g=2;g<x;g+=2)M(q*R,r,-v,c),q+=1,c+=_;m+=x}e=l,n+=i}}j.exports=z
+});var L=h(function(J,C){
+var B=p();function D(a,r,v,u){var f,i;return a===1||(f=u+a*v,i=f+a*v,B(a,r,v,f,r,v,i)),r}C.exports=D
 });var E=L();module.exports=E;
 /** @license Apache-2.0 */
 /** @license Apache-2.0 */
